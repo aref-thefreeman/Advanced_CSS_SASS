@@ -29,6 +29,16 @@ body{
 
     /* top will stay same, but other part will be cropped if necessay */
     background-position: top; 
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);    
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);    
+
+}
+
+
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.logo{
 
 }
