@@ -44,14 +44,18 @@ body{
     height: 35px;
     
 }
+.text-box{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+
+}
 
 .heading-primary{
     color: #fff;
     text-transform: uppercase;
     position: absolute;
-    top: 35%;
-    left: 35%;
-    position: relative;
+    
 }
 
 .heading-primary-main{
@@ -65,7 +69,5 @@ body{
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 17px;
-    position: absolute;
-    left: 7px;
     
 }
