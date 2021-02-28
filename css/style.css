@@ -132,6 +132,10 @@ body{
     display: inline-block;
     border-radius:100px ;
     transition: all .2s;
+    position: relative;
+
+
+
     
     
     
@@ -155,4 +159,47 @@ body{
 
 .btn::after{
     content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    
+    /* transform: scaleY(1.5); */
+}
+
+.btn-white::after{
+    background-color: rgb(247, 244, 244);
+    
+
+}
+.btn:hover::after{
+    transform: scale(1.2,1.5);
+    opacity: 0;
+}
+
+.btn-animated{
+    animation-name: moveInTop;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInTop{
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
 }
